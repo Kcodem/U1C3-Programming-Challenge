@@ -9,7 +9,7 @@ public class Solution {
 
 //done
     public Solution(String model, int id) {
-        model = "TI-84";
+        calcModel = model;
         idNumber = id;
     }
 //done
@@ -94,7 +94,7 @@ public class Solution {
     public int average(int num1, int num2) {
         //implement code here
         int addit = num1 + num2;
-        double avg = addit / 2;
+        double avg = addit / 2.0;
         int round = (int)(avg + 0.5);
         return round;
     }
@@ -104,8 +104,7 @@ public class Solution {
         Solution calc = new Solution(calcModel,idNumber);
         String cmodel = calc.getCalcModel();
         int iden = calc.getIdNumber();
-        String word = "This calculator is a model " + cmodel + " with id " + iden;
-        return word;
+        return "This calculator is a model " + cmodel + " with id " + iden;
     }
 
     //something wrong with the new solution
